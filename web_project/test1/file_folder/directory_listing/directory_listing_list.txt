@@ -1,0 +1,7 @@
+image
+images
+admin
+test
+file
+icon
+icons

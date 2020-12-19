@@ -1,0 +1,5 @@
+<script>alert(1)</script>
+<script>alert("test");</script>
+<script>alert(String.fromCharCode(116, 101, 115, 116))</script>
+;</script><script>alert("xss");</script>
+<scr<script>ipt>alert("xss");</scr</script>ipt>

@@ -1,0 +1,5 @@
+http://172.30.1.46/gmshop/ (http://172.30.1.46/gmshop/login_ok.php), (userid,pwd)
+http://172.30.1.46/gmshop/ (http://172.30.1.46/gmshop/search_result.php), (searchstring,search)
+http://172.30.1.46/gmshop/goods_list.php?Index=1 (http://172.30.1.46/gmshop/goods_list.php), (Index,searchstring,Sort)
+http://172.30.1.46/gmshop/detail_search.php (http://172.30.1.46/gmshop/search_result.php?detail=1), (detail,name,company,model,price,category)
+http://172.30.1.46/gmshop/goods_detail.php?goodsIdx=233 (http://172.30.1.46/gmshop/goods_detail.php?goodsIdx=233), (goodsIdx,optionName1,optionName2,optionName3,temp_price,price,price2,point,point2,cnt)

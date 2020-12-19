@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% block content %}
+{% load static%}
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <title>취약점 진단 주소 입력창</title>
+
+  <link href="{% static 'assets/css/pace.min.css'%}" rel="stylesheet"/>
+  <script src="{% static 'assets/js/pace.min.js'%}"></script>
+  <link rel="icon" href="{% static 'assets/images/favicon.ico'%}" type="image/x-icon">
+  <link href="{% static 'assets/css/bootstrap.min.css'%}" rel="stylesheet"/>
+  <link href="{% static 'assets/css/animate.css'%}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'assets/css/icons.css'%}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'assets/css/app-style.css'%}" rel="stylesheet"/>
+  
+</head>
+
+<body class="bg-theme bg-theme1">
+
+<!-- start loader -->
+   <div id="pageloader-overlay" class="visible incoming"><div class="loader-wrapper-outer"><div class="loader-wrapper-inner" ><div class="loader"></div></div></div></div>
+   <!-- end loader -->
+
+<!-- Start wrapper-->
+ <div id="wrapper">
+
+	<div class="card card-authentication1 mx-auto my-4">
+		<div class="card-body">
+		 <div class="card-content p-2">
+		 	<div class="text-center">
+       <img src="{% static 'assets/images/logo-icon.png'%}" class="logo-icon" alt="logo icon">
+		 	</div>
+		  <div class="card-title text-uppercase text-center py-3">취약점 진단 주소 입력</div>
+		    <form method="POST" action="main">
+			  <div class="form-group">
+			  <label for="exampleInputName" class="sr-only">URL</label>
+			   <div class="position-relative has-icon-right">
+				  <input type="text" name="url_data" class="form-control input-shadow" placeholder="URL">
+
+			   </div>
+			  </div>
+			 <button type="submit" class="btn btn-light btn-block waves-effect waves-light">확인</button>
+			</div>
+			 </form>
+       
+
+	     </div>
+    
+     <!--Start Back To Top Button-->
+    
+    <!--End Back To Top Button-->
+	
+	<!--start color switcher-->
+
+  <!--end color switcher-->
+	{% endblock %}
+	</div><!--wrapper-->
+	
+
+  <script src="{% static 'assets/js/jquery.min.js'%}"></script>
+  <script src="{% static 'assets/js/popper.min.js'%}"></script>
+  <script src="{% static 'assets/js/bootstrap.min.js'%}"></script>
+  <script src="{% static 'assets/js/sidebar-menu.js'%}"></script>
+  <script src="{% static 'assets/js/app-script.js'%}"></script>
+ 
+</body>
+</html>

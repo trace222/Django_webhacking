@@ -1,0 +1,38 @@
+<!-- C\Code\mysite\elections\templates\elections\index.html -->
+{% extends "test1/layout.html" %}
+{% block title %}
+홈페이지
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <td style="font-size:20pt; text-align:center;">취약점 점검 할 주소 입력</td>
+        </tr>
+        </thead>
+        <tbody>
+        <!--{% for candidate in candidates %}
+        <tr>
+            <td>{{candidate.name}}</td>
+            <td>{{candidate.introduction}}</td>
+            <td><a href="areas/{{candidate.area}}">{{candidate.area}}</a></td>
+            <td>기호 {{candidate.partynum}}</td>
+        </tr>
+        {% endfor %}
+        -->
+        <form method="POST" action="main">
+        <tr>
+        <td>
+        <input type="text" name="url_data"  style="text-align:center; width:1200px; height:40px; letter-spacing: -5px"></input>
+        </td>
+        </tr>
+
+        </form>
+
+        <tbody>
+    </table>
+{% endblock %}

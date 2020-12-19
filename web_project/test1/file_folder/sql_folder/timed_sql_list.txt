@@ -1,0 +1,8 @@
+http://172.30.1.46/gmshop/ (http://172.30.1.46/gmshop/poll_ok.php), (pollIdx,voteArrstr,vote,vote,vote)
+http://172.30.1.46/gmshop/goods_list.php?Index=1 (http://172.30.1.46/gmshop/goods_list.php?Index=1), ()
+http://172.30.1.46/gmshop/board_list.php?boardIndex=1 (http://172.30.1.46/gmshop/board_list.php), (boardIndex,searchstring,search)
+http://172.30.1.46/gmshop/board_write.php?boardIndex=4 (http://172.30.1.46/gmshop/board_write_ok.php), (boardIndex,ref,re_step,re_level,data,name,email,title,img1,img2,pwd,bLock,bHtml,bHtml,bHtml)
+http://172.30.1.46/gmshop/board_view.php?data=idx%3D22219%26pagecnt%3D%26letter_no%3D%26offset%3D%26search%3D%26searchstring%3D%26present_num%3D5&boardIndex=4 (http://172.30.1.46/gmshop/board_view.php?data=idx=22219&pagecnt=&letter_no=&offset=&search=&searchstring=&present_num=5&boardIndex=4), (boardcode,boardidx,bcomment,re_name,re_pwd)
+http://172.30.1.46/gmshop/board_view.php?data=idx%3D22219%26pagecnt%3D%26letter_no%3D%26offset%3D%26search%3D%26searchstring%3D%26present_num%3D5&boardIndex=4 (http://172.30.1.46/gmshop/board_view.php?data=idx%3D22219%26pagecnt%3D%26letter_no%3D%26offset%3D%26search%3D%26searchstring%3D%26present_num%3D5&boardIndex=4), (pwd)
+http://172.30.1.46/gmshop/goods_detail.php?goodsIdx=233 (http://172.30.1.46/gmshop/goods_comment_ok.php), (goodsIdx,name,del,com_idx)
+http://172.30.1.46/gmshop/board_write.php?boardIndex=10 (http://172.30.1.46/gmshop/board_write_ok.php), (boardIndex,ref,re_step,re_level,data,name,email,title,pwd,bLock,bHtml,bHtml,bHtml)

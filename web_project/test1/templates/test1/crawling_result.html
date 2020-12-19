@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta http-equiv="X-UA-Compatible" content="ie=edge"> <title>취약점 결과</title> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!-- 차트 링크 --> <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+{% block content %}
+{% load static%}
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <title>취약점 결과</title>
+  <link href="{% static 'assets/css/pace.min.css'%}" rel="stylesheet"/>
+  <script src="{% static 'assets/js/pace.min.js'%}"></script>
+  <link rel="icon" href="{% static 'assets/images/favicon.ico'%}" type="image/x-icon">
+  <link href="{% static 'assets/plugins/vectormap/jquery-jvectormap-2.0.2.css'%}" rel="stylesheet"/>
+  <link href="{% static 'assets/plugins/simplebar/css/simplebar.css'%}" rel="stylesheet"/>
+  <link href="{% static 'assets/css/bootstrap.min.css'%}" rel="stylesheet"/>
+  <link href="{% static 'assets/css/animate.css'%}" rel="stylesheet" type="text/css"/>
+  <!-- Icons CSS-->
+  <link href="{% static 'assets/css/icons.css'%}" rel="stylesheet" type="text/css"/>
+  <!-- Sidebar CSS-->
+  <link href="{% static 'assets/css/sidebar-menu.css'%}" rel="stylesheet"/>
+  <!-- Custom Style-->
+  <link href="{% static 'assets/css/app-style.css'%}" rel="stylesheet"/>
+  
+</head>
+
+<body class="bg-theme bg-theme1">
+ 
+
+ <div id="wrapper">
+ 
+  <!--Start sidebar-wrapper-->
+   <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
+     <div class="brand-logo">
+      <a href="index">
+       <img src="{% static 'assets/images/logo-icon.png'%}" class="logo-icon" alt="logo icon">
+       <h5 class="logo-text">웹 취약점 진단</h5>
+     </a>
+   </div>
+   <ul class="sidebar-menu do-nicescrol">
+    <li class="sidebar-header">MAIN NAVIGATION</li>
+    <li>
+      <a href="crawling_result">
+        <i class="zmdi zmdi-view-dashboard"></i> <span>크롤링 데이터</span>
+      </a>
+    </li>
+    <li>
+      <a href="result">
+        <i class="zmdi zmdi-view-dashboard"></i> <span>취약점 진단 결과</span>
+      </a>
+    </li>
+    <li>
+      <a href="solve">
+        <i class="zmdi zmdi-view-dashboard"></i> <span>대응방안</span>
+      </a>
+    </li>
+    <li>
+      <a href="login" target="_blank">
+        <i class="zmdi zmdi-lock"></i> <span>Logout</span>
+      </a>
+    </li>
+
+
+  </ul>
+   
+   </div>
+   <!--End sidebar-wrapper-->
+
+   <div class="content-wrapper">
+    <div class="container-fluid">
+
+    <div class="container"> 
+    <div class="row my-3"> 
+    <div class="col-12"> 
+    <h4>크롤링 결과</h4>
+    <B>크롤링 목록</B><br>
+        <br><b style="font-size:15pt">{{baseUrl}}</b>
+        <ul>
+        {% for crawling_data in crawling_list %}
+        <li><B>{{crawling_data}}</B></li>
+        {% endfor %}
+        </ul>
+     </div> </div>
+    </div> </div> </div> 
+    
+<header class="topbar-nav">
+ <nav class="navbar navbar-expand fixed-top">
+  
+</nav>
+</header>
+
+
+
+	
+   
+	  
+	
+      <!--End Dashboard Content-->
+	  
+	<!--start overlay-->
+		  <div class="overlay toggle-menu"></div>
+		<!--end overlay-->
+		
+    </div>
+    <!-- End container-fluid-->
+    
+    </div><!--End content-wrapper-->
+   <!--Start Back To Top Button-->
+    <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+    <!--End Back To Top Button-->
+	
+	<!--Start footer-->
+
+	<!--End footer-->
+	
+{% endblock %}
+   
+
+
+  <script src="{% static 'assets/js/jquery.min.js'%}"></script>
+  <script src="{% static 'assets/js/popper.min.js'%}"></script>
+  <script src="{% static 'assets/js/bootstrap.min.js'%}"></script>
+	
+ <!-- simplebar js -->
+  <script src="{% static 'assets/plugins/simplebar/js/simplebar.js'%}"></script>
+  <!-- sidebar-menu js -->
+  <script src="{% static 'assets/js/sidebar-menu.js'%}"></script>
+  <!-- loader scripts -->
+  <script src="{% static 'assets/js/jquery.loading-indicator.js'%}"></script>
+  <!-- Custom scripts -->
+  <script src="{% static 'assets/js/app-script.js'%}"></script>
+  <!-- Chart js -->
+  
+  <script src="{% static 'assets/plugins/Chart.js/Chart.min.js'%}"></script>
+ 
+  <!-- Index js -->
+  <script src="{% static 'assets/js/index.js'%}"></script>
+  
+</body>
+</html>
